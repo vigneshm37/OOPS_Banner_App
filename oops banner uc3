@@ -1,0 +1,25 @@
+/*
+OOPSBannerApp - OOPS Banner Application (Use Case 3)
+This class extends functionality of Use Case 2 by improving the "OOPS" banner display.
+Uses String.join() method to create each line efficiently (vs + operator creating multiple String objects).
+@author Developer
+@version 3.0
+*/
+
+public class OOPSBannerApp {
+    public static void main(String[] args) {
+        // OOPS banner patterns (5x5 chars per letter)
+        String[] line1 = {"█████", "████ ", "██  ██", "██ ██", "█████"};  // O O P S
+        String[] line2 = {"█   █", "█  █ ", "██  ██", "██ ██", "█   █"};
+        String[] line3 = {"█████", "████ ", "██████", "  ", "█████"};
+        String[] line4 = {"█   █", "█  █ ", "██  ██", "  ██ ", "█   █"};
+        String[] line5 = {"█████", "████ ", "██  ██", "██ ██", "█████"};
+        
+        // Print banner using String.join() - efficient!
+        System.out.println(String.join(" ", line1));
+        System.out.println(String.join(" ", line2));
+        System.out.println(String.join(" ", line3));
+        System.out.println(String.join(" ", line4));
+        System.out.println(String.join(" ", line5));
+    }
+}
